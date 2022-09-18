@@ -38,6 +38,21 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.axonframework</groupId>
+            <artifactId>axon-messaging</artifactId>
+            <version>4.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.axonframework</groupId>
+            <artifactId>axon-modelling</artifactId>
+            <version>4.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.axonframework</groupId>
+            <artifactId>axon-spring</artifactId>
+            <version>4.6.0</version>
+        </dependency>
 
     </dependencies>
     <dependencyManagement>
@@ -49,6 +64,20 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.axonframework/axon-spring-boot-starter -->
+
+            <dependency>
+                <groupId>org.axonframework</groupId>
+                <artifactId>axon-spring-boot-starter</artifactId>
+                <version>4.6.0</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>31.1-jre</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
     <build>
